@@ -1,17 +1,18 @@
-name: example-basic
-# This workflow represents a set of basic End-to-End tests
+name: print-hello
 on:
   push:
     branches:
       - 'master'
   pull_request:
+    branches:
+      - 'master'
   workflow_dispatch:
 
 jobs:
-  hello:
+  list-files:
     runs-on: ubuntu-latest
     steps:
-      - name: print hello
-        run: echo 'Hello Developers!'
+    	- uses: actions/checkout@v2
+      - name: list files
+        run: ls -al
         shell: bash
-
