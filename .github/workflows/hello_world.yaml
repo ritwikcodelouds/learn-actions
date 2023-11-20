@@ -11,5 +11,5 @@ jobs:
   runs-on: ubuntu-latest
   steps:
 	- name: print-hello
-	  run: echo "Hello Developers!"
+	  run: echo 'Hello Developers!'
 	  shell: bash
