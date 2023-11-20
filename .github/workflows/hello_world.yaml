@@ -1,12 +1,10 @@
-name: Hello world workflow
-
+name: example-basic
+# This workflow represents a set of basic End-to-End tests
 on:
   push:
-	branches:
-	  - master
+    branches:
+      - 'master'
   pull_request:
-	branches:
-	  - master
   workflow_dispatch:
 
 jobs:
@@ -14,5 +12,5 @@ jobs:
 	runs-on: ubuntu-latest
 	steps:
 	  - name: print-hello
-		run: echo "Hello Developers!"
+	    run: echo "Hello Developers!"
 		shell: bash
