@@ -1,5 +1,8 @@
 name: print-hello
 on:
+  push:
+    branches:
+      - 'master'
   pull_request:
     branches:
       - 'master'
@@ -11,6 +14,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: list files
-        run: mn
+        run: ls -al
+        shell: bash
+  
+  run-later:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        name: pull repository
+      - name: list files
+        run: echo "Run at last"
         shell: bash
 
