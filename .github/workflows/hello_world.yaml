@@ -1,8 +1,5 @@
 name: print-hello
 on:
-  push:
-    branches:
-      - 'master'
   pull_request:
     branches:
       - 'master'
@@ -14,13 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: list files
-        run: ls -al
-        shell: bash
-
-  print-hello:
-    runs-on: ubuntu-latest
-    steps:
-      - name: print hello
-        run: echo 'Hello Developers!'
+        run: mn
         shell: bash
 
