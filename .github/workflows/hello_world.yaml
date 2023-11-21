@@ -19,6 +19,7 @@ jobs:
   
   run-later:
     runs-on: ubuntu-latest
+    needs: ['list-files']
     steps:
       - uses: actions/checkout@v2
         name: pull repository
