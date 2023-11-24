@@ -1,5 +1,5 @@
 name: second yaml
-run-name: ${{ github.actor }} is running actions
+run-name: ${{ github.actor }} is running on bash
 
 on:
   push:
