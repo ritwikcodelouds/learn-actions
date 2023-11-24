@@ -11,6 +11,7 @@ jobs:
   check-seonc:
     runs-on: ubuntu-lastest
     steps:
-      - name: input redirection
-        run: echo "Hello"
-        shell: bash
+      - run: ls
+      - name: checkout
+        uses: actions/checkout@v4
+      - run: ls
