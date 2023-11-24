@@ -1,0 +1,16 @@
+name: second yaml
+run-name: ${{ github.actor }} is running actions
+
+on:
+  push:
+    branches:
+      - 'master'
+  workflow_dispatch:
+
+jobs:
+  check-seonc:
+    runs-on: ubuntu-lastest
+    steps:
+      - name: input redirection
+        run: echo "$SHELL"
+        shell: bash
