@@ -15,6 +15,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: list files
-        run: echo "$SHELL""
+        run: echo "Hi""
         shell: sh
 

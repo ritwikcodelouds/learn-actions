@@ -12,5 +12,5 @@ jobs:
     runs-on: ubuntu-lastest
     steps:
       - name: input redirection
-        run: echo "$SHELL"
+        run: echo "Hello"
         shell: bash
