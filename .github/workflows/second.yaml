@@ -11,7 +11,7 @@ jobs:
   check-seond:
     runs-on: ubuntu-lastest
     steps:
-      - run: ls
+      - run: echo "Hello"
       - uses: actions/checkout@v4
       - name: checkout
         run: ls -al
